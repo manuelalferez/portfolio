@@ -20,7 +20,7 @@ export default function About() {
       </div>
 
       <p className="mt-8 lg:w-1/2">
-        I am a software developer and an open source enthusiast. I work as a
+        I'm a software developer and an open source enthusiast. I work as a
         Solutions Engineer at Hubtype and participate as a member of Google
         Developer Groups.
       </p>
