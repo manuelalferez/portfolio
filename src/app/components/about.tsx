@@ -1,11 +1,15 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <div className="mx-auto flex flex-col md:items-center">
       <div className="flex flex-col md:flex-row md:items-center">
-        <img
-          src="https://pbs.twimg.com/profile_images/1699038279566278656/FPm4vnr5_400x400.jpg"
+        <Image
+          src="https://avatars.githubusercontent.com/u/38152841?v=4"
           alt="manuel profile picture"
-          className="w-40 rounded-full border-2 border-gray-300 p-1"
+          width={150}
+          height={150}
+          className="rounded-full border-2 border-gray-300 p-1"
         />
         <div className="mt-5 flex flex-col md:mt-0 md:pl-4">
           <h2 className="text-2xl">
@@ -16,7 +20,7 @@ export default function About() {
       </div>
 
       <p className="mt-8 lg:w-1/2">
-        I'm a software developer and an open source enthusiast. I work as a
+        I am a software developer and an open source enthusiast. I work as a
         Solutions Engineer at Hubtype and participate as a member of Google
         Developer Groups.
       </p>
