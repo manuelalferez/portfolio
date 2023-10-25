@@ -2,7 +2,7 @@ import "server-only";
 import { DictionaryData } from "./types";
 
 interface Dictionary {
-  [key: string]: () => Promise<{ [key: string]: { [key: string]: string } }>;
+  [key: string]: () => Promise<DictionaryData>;
 }
 
 const dictionaries: Dictionary = {
