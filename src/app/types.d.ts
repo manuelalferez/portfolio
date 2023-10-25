@@ -25,7 +25,23 @@ export interface OfferItem {
   description: string;
 }
 
+interface ProjectsSection {
+  title: string;
+  subtitle: string;
+  list: ProjectItem[];
+}
+
+export interface ProjectItem {
+  title: string;
+  description: string;
+  technologies: string;
+  image: string;
+  website: string;
+  code?: string;
+}
+
 export interface DictionaryData {
   about: AboutSection;
   offer: OfferSection;
+  projects: ProjectsSection;
 }

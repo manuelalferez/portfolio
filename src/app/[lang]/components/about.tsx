@@ -22,7 +22,9 @@ export default async function About({ lang }: Lang) {
         </div>
       </div>
 
-      <p className="mt-8 text-center lg:w-1/2">{dict.about.description}</p>
+      <span className="mt-8 text-center md:w-2/3 lg:w-1/2">
+        {dict.about.description}
+      </span>
     </div>
   );
 }

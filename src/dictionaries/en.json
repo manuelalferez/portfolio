@@ -40,5 +40,42 @@
         "description": "I can help you build your website or web application using the latest technologies."
       }
     ]
+  },
+  "projects": {
+    "title": "Featured projects",
+    "subtitle": "Here are some of my latest projects that I'm proud of.",
+    "list": [
+      {
+        "title": "Flowinance",
+        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
+        "technologies": "Next.js • Supabase • TailwindCSS",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_flowinance.png?updatedAt=1698237336857",
+        "website": "https://flowinance.vercel.app",
+        "code": "https://github.com/manuelalferez/flowinance"
+      },
+      {
+        "title": "Chatcus",
+        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
+        "technologies": "Next.js • Supabase",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_chatcus.png?updatedAt=1698240626670",
+        "website": "https://flowinance.vercel.app",
+        "code": "https://github.com/manuelalferez/flowinance"
+      },
+      {
+        "title": "Flowinance",
+        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
+        "technologies": "Next.js • Supabase • TailwindCSS",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_flowinance.png?updatedAt=1698237336857",
+        "website": "https://flowinance.vercel.app"
+      },
+      {
+        "title": "Flowinance",
+        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
+        "technologies": "Next.js • Supabase • TailwindCSS",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_flowinance.png?updatedAt=1698237336857",
+        "website": "https://flowinance.vercel.app",
+        "code": "https://github.com/manuelalferez/flowinance"
+      }
+    ]
   }
 }

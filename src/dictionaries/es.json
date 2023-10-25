@@ -40,5 +40,35 @@
         "description": "I can help you build your website or web application using the latest technologies."
       }
     ]
+  },
+  "projects": {
+    "title": "Proyectos destacados",
+    "subtitle": "Aquí algunos proyectos de los que estoy orgulloso.",
+    "list": [
+      {
+        "title": "Flowinance",
+        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
+        "technologies": "Next.js • Supabase • TailwindCSS",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_flowinance.png?updatedAt=1698237336857",
+        "website": "https://flowinance.vercel.app",
+        "code": "https://github.com/manuelalferez/flowinance"
+      },
+      {
+        "title": "Flowinance",
+        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
+        "technologies": "Next.js • Supabase",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_flowinance.png?updatedAt=1698237336857",
+        "website": "https://flowinance.vercel.app",
+        "code": "https://github.com/manuelalferez/flowinance"
+      },
+      {
+        "title": "Flowinance",
+        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
+        "technologies": "Next.js • Supabase • TailwindCSS",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_flowinance.png?updatedAt=1698237336857",
+        "website": "https://flowinance.vercel.app",
+        "code": "https://github.com/manuelalferez/flowinance"
+      }
+    ]
   }
 }
