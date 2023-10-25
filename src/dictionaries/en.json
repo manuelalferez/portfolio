@@ -5,5 +5,40 @@
     "name": "Manuel Alférez",
     "description": "I'm a software developer and an open source enthusiast. I work as a Solutions Engineer at Hubtype and participate as a member of Google Developer Groups.",
     "image": "https://avatars.githubusercontent.com/u/38152841?v=4"
+  },
+  "offer": {
+    "title": "What I can do for you",
+    "list": [
+      {
+        "image": "https://api.iconify.design/jam:thunder.svg",
+        "title": "Web Development",
+        "description": "I can help you build your website or web application using the latest technologies."
+      },
+      {
+        "image": "https://api.iconify.design/jam:user-circle.svg",
+        "title": "Web Development",
+        "description": "I can help you build your website or web application using the latest technologies."
+      },
+      {
+        "image": "https://api.iconify.design/material-symbols:shield-lock-rounded.svg",
+        "title": "Web Development",
+        "description": "I can help you build your website or web application using the latest technologies."
+      },
+      {
+        "image": "https://api.iconify.design/jam:thunder.svg",
+        "title": "Web Development",
+        "description": "I can help you build your website or web application using the latest technologies."
+      },
+      {
+        "image": "https://api.iconify.design/jam:user-circle.svg",
+        "title": "Web Development",
+        "description": "I can help you build your website or web application using the latest technologies."
+      },
+      {
+        "image": "https://api.iconify.design/material-symbols:shield-lock-rounded.svg",
+        "title": "Web Development",
+        "description": "I can help you build your website or web application using the latest technologies."
+      }
+    ]
   }
 }

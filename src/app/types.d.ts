@@ -6,7 +6,7 @@ export interface Lang {
   lang: string;
 }
 
-interface AboutData {
+interface AboutSection {
   hi: string;
   verb: string;
   name: string;
@@ -14,6 +14,18 @@ interface AboutData {
   image: string;
 }
 
+interface OfferSection {
+  title: string;
+  list: OfferItem[];
+}
+
+export interface OfferItem {
+  image: string;
+  title: string;
+  description: string;
+}
+
 export interface DictionaryData {
-  about: AboutData;
+  about: AboutSection;
+  offer: OfferSection;
 }

@@ -12,7 +12,7 @@ export default async function About({ lang }: Lang) {
           alt="manuel profile picture"
           width={150}
           height={150}
-          className="rounded-full border-2 border-gray-300 p-1"
+          className="rounded-full border-2 border-gray-200 p-1"
         />
         <div className="mt-5 flex flex-col md:mt-0 md:pl-4">
           <h2 className="text-2xl">
@@ -22,7 +22,7 @@ export default async function About({ lang }: Lang) {
         </div>
       </div>
 
-      <p className="mt-8 lg:w-1/2">{dict.about.description}</p>
+      <p className="mt-8 text-center lg:w-1/2">{dict.about.description}</p>
     </div>
   );
 }
