@@ -2,7 +2,7 @@ import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 import { NextRequest } from "next/server";
 
-const locales = ["en-US", "es"];
+export const locales = ["en", "es"];
 
 function getLocale(request: NextRequest) {
   const acceptLanguage = request.headers.get("accept-language") ?? undefined;
@@ -10,7 +10,7 @@ function getLocale(request: NextRequest) {
   const languages = new Negotiator({ headers }).languages();
   const defaultLocale = locales[0];
 
-  return match(languages, locales, defaultLocale); // -> 'en-US'
+  return match(languages, locales, defaultLocale);
 }
 
 export function middleware(request: NextRequest) {
