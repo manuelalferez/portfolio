@@ -6,8 +6,8 @@ import Image from "next/image";
 export default async function Offer({ lang }: Lang) {
   const dict: DictionaryData = await getDictionary(lang);
   return (
-    <div className="mt-16 flex flex-col gap-8">
-      <h1 className="flex justify-center bg-gradient-to-r from-gray-300 via-black to-black bg-clip-text text-4xl font-bold text-transparent">
+    <div className="mt-16 flex flex-col gap-12">
+      <h1 className="flex justify-center bg-gradient-to-r from-gray-300 via-black to-black bg-clip-text pb-1 text-4xl font-bold text-transparent md:text-5xl">
         {dict.offer.title}
       </h1>
       <div className="flex flex-wrap justify-center gap-4">

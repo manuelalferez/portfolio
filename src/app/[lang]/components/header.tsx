@@ -17,6 +17,7 @@ export default function Header() {
           variant="outline"
           onClick={() => changeLang(locale)}
           key={locale}
+          className="shadow-sm hover:shadow-md"
         >
           {locale.toUpperCase()}
         </Button>

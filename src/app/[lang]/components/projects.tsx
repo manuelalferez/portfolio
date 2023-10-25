@@ -8,17 +8,17 @@ import { cn } from "@/lib/utils";
 export default async function Projects({ lang }: Lang) {
   const dict: DictionaryData = await getDictionary(lang);
   return (
-    <div className="mt-16 flex flex-col gap-16">
+    <div className="mt-16 flex flex-col gap-12">
       <div>
-        <h1 className="flex justify-center bg-gradient-to-r from-gray-300 via-black to-black bg-clip-text text-5xl font-bold text-transparent">
+        <h1 className="animated-text flex pb-2 text-4xl font-bold md:justify-center md:text-5xl">
           {dict.projects.title}
         </h1>
-        <h2 className="mt-2 flex justify-center text-2xl">
+        <h2 className="flex text-xl md:justify-center md:text-2xl">
           {dict.projects.subtitle}
         </h2>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-4 ">
+      <div className="flex flex-wrap justify-center gap-4">
         {dict.projects.list.map((item: ProjectItem, index: number) => (
           <Card className="p-0 shadow-md hover:shadow-lg lg:w-1/3" key={index}>
             <CardHeader className="p-0">
