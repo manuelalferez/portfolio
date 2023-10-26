@@ -70,5 +70,51 @@
         "code": "https://github.com/manuelalferez/flowinance"
       }
     ]
+  },
+  "resume": {
+    "title": "Currículum",
+    "subtitle": "Aquí puedes encontrar mi currículum en formato PDF.",
+    "download": "Descargar",
+    "downloadLink": "https://github.com/manuelalferez/resume/blob/master/resume.pdf",
+    "experience": [
+      {
+        "period": "2022 - Actualidad",
+        "role": "Ingeniero de Soluciones",
+        "company": "Hubtype",
+        "companyLink": "https://www.hubtype.com/",
+        "location": "Remoto, España",
+        "achievements": [
+          "Mejoré la experiencia del usuario en bots mediante la creación de componentes visuales de mensajes personalizados, lo que resultó en más de +36 millones de interacciones significativas y una mejora significativa en la experiencia del usuario.",
+          "Implementé un complemento interno capaz de generar chatbots a partir de un flujo suministrado por el backend y reporté directamente al CTO sobre el progreso y el éxito del proyecto.",
+          "Facilité sesiones interactivas de capacitación en software para clientes, abarcando tanto los conceptos básicos del conocimiento del producto como los aspectos técnicos avanzados de los bots, específicamente para desarrolladores."
+        ]
+      },
+      {
+        "period": "2021 - 2022",
+        "role": "Ingeniero de Soluciones",
+        "company": "Hubtype",
+        "companyLink": "https://www.hubtype.com/",
+        "location": "Remoto, España",
+        "achievements": [
+          "Mejoré la experiencia del usuario en bots mediante la creación de componentes visuales de mensajes personalizados, lo que resultó en más de +36 millones de interacciones significativas y una mejora significativa en la experiencia del usuario.",
+          "Implementé un complemento interno capaz de generar chatbots a partir de un flujo suministrado por el backend y reporté directamente al CTO sobre el progreso y el éxito del proyecto.",
+          "Facilité sesiones interactivas de capacitación en software para clientes, abarcando tanto los conceptos básicos del conocimiento del producto como los aspectos técnicos avanzados de los bots, específicamente para desarrolladores."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "period": "2021",
+        "title": "Licenciatura en Ingeniería Informática — INC",
+        "institution": "Universidad de Jaén",
+        "location": "Jaén, España"
+      },
+      {
+        "period": "2021",
+        "title": "Licenciatura en Tecnología de la Información",
+        "institution": "Universidad de Jyväskylä",
+        "location": "Jyväskylä, Finlandia"
+      }
+    ]
   }
 }

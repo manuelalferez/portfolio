@@ -40,8 +40,34 @@ export interface ProjectItem {
   code?: string;
 }
 
+interface ResumeSection {
+  title: string;
+  subtitle: string;
+  download: string;
+  downloadLink: string;
+  experience: Experience[];
+  education: Education[];
+}
+
+interface Experience {
+  period: string;
+  role: string;
+  company: string;
+  companyLink: string;
+  location: string;
+  achievements: string[];
+}
+
+interface Education {
+  period: string;
+  title: string;
+  institution: string;
+  location: string;
+}
+
 export interface DictionaryData {
   about: AboutSection;
   offer: OfferSection;
   projects: ProjectsSection;
+  resume: ResumeSection;
 }

@@ -77,5 +77,51 @@
         "code": "https://github.com/manuelalferez/flowinance"
       }
     ]
+  },
+  "resume": {
+    "title": "Resume",
+    "subtitle": "Here you can find my resume in PDF format.",
+    "download": "Download",
+    "downloadLink": "https://github.com/manuelalferez/resume/blob/master/resume.pdf",
+    "experience": [
+      {
+        "period": "2022 - Present",
+        "role": "Solutions Engineer",
+        "company": "Hubtype",
+        "companyLink": "https://www.hubtype.com/",
+        "location": "Remote, Spain",
+        "achievements": [
+          "Improved user experience in bots by creating custom visual message components, resulting in over +36M meaningful interactions and a significant improvement in the user experience.",
+          "Implemented an internal plugin able to generate chatbots from a backend-supplied flow, and reporting directly to the CTO on the progress and success of the project.",
+          "Facilitated interactive software training sessions for customers, encompassing both the basics of product knowledge and advanced technical aspects of bots specifically for developers."
+        ]
+      },
+      {
+        "period": "2021 - 2022",
+        "role": "Solutions Engineer",
+        "company": "Hubtype",
+        "companyLink": "https://www.hubtype.com/",
+        "location": "Remote, Spain",
+        "achievements": [
+          "Improved user experience in bots by creating custom visual message components, resulting in over +36M meaningful interactions and a significant improvement in the user experience.",
+          "Implemented an internal plugin able to generate chatbots from a backend-supplied flow, and reporting directly to the CTO on the progress and success of the project.",
+          "Facilitated interactive software training sessions for customers, encompassing both the basics of product knowledge and advanced technical aspects of bots specifically for developers."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "period": "2021",
+        "title": "BS in Computer Engineering — INC",
+        "institution": "University of Jaén",
+        "location": "Jaén, Spain"
+      },
+      {
+        "period": "2021",
+        "title": "BS in Information Technology",
+        "institution": "University of Jyväskylä",
+        "location": "Jyväskylä, Finland"
+      }
+    ]
   }
 }

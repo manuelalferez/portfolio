@@ -10,7 +10,7 @@ export default async function Offer({ lang }: Lang) {
       <h1 className="flex justify-center bg-gradient-to-r from-gray-300 via-black to-black bg-clip-text pb-1 text-4xl font-bold text-transparent md:text-5xl">
         {dict.offer.title}
       </h1>
-      <div className="flex flex-wrap justify-center gap-4">
+      <div className="flex flex-wrap justify-evenly gap-4">
         {dict.offer.list.map((item: OfferItem, index: number) => (
           <Card
             className="border-none shadow-none hover:scale-105 md:w-1/3 lg:w-1/4"
