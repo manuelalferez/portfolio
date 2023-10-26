@@ -25,7 +25,7 @@ export default async function Resume({ lang }: Lang) {
           />
         </div>
       </div>
-      <Card>
+      <Card className="shadow-md">
         <Experience lang={lang} />
         <Organizations lang={lang} />
         <Education lang={lang} />

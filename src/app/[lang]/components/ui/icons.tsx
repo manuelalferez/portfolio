@@ -140,7 +140,7 @@ export function DownloadLink({
     <Link
       href={href}
       className={cn(
-        "flex w-fit items-center gap-1",
+        "flex w-fit items-center gap-1 shadow-sm",
         buttonVariants({ variant: "outline" }),
       )}
     >
