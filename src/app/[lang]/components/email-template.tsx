@@ -1,13 +1,19 @@
 import * as React from "react";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
-interface EmailTemplateProps {
-  firstName: string;
+export function EmailTemplate({
+  email,
+  message,
+}: {
+  email: string;
+  message: string;
+}) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Message from: {email}</CardTitle>
+        <CardContent>{message}</CardContent>
+      </CardHeader>
+    </Card>
+  );
 }
-
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
-  firstName,
-}) => (
-  <div>
-    <h1>Welcome, {firstName}!</h1>
-  </div>
-);

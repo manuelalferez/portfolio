@@ -34,12 +34,34 @@ export function ContactForm() {
   });
   const { toast } = useToast();
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    toast({
-      description: "✅ Message sent successfully!",
-    });
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: form.getValues("email"),
+          message: form.getValues("message"),
+        }),
+      });
+      console.log(response);
+      if (response.ok) {
+        toast({
+          description: "✅ Message sent successfully!",
+        });
+      } else {
+        toast({
+          description: "❎ Message could not be sent. Please try again.",
+        });
+      }
+    } catch (error) {
+      toast({
+        description: "❎ Message could not be sent. Please try again.",
+      });
+    }
+
     form.reset();
   }
   return (
