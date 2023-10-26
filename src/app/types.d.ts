@@ -98,9 +98,38 @@ interface SkillsItem {
   items: string;
 }
 
+interface ContactSection {
+  title: string;
+  form: Form;
+  toast: Toast;
+}
+
+interface Form {
+  email: Input;
+  message: Input;
+  error: Error;
+  button: string;
+}
+
+interface Input {
+  label: string;
+  placeholder: string;
+}
+
+interface Error {
+  email: string;
+  emptyField: string;
+}
+
+interface Toast {
+  success: string;
+  error: string;
+}
+
 export interface DictionaryData {
   about: AboutSection;
   offer: OfferSection;
   projects: ProjectsSection;
   resume: ResumeSection;
+  contact: ContactSection;
 }

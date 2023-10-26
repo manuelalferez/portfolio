@@ -56,6 +56,14 @@
       {
         "title": "Flowinance",
         "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
+        "technologies": "Next.js • Supabase • TailwindCSS",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_flowinance.png?updatedAt=1698237336857",
+        "website": "https://flowinance.vercel.app",
+        "code": "https://github.com/manuelalferez/flowinance"
+      },
+      {
+        "title": "Flowinance",
+        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
         "technologies": "Next.js • Supabase",
         "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_flowinance.png?updatedAt=1698237336857",
         "website": "https://flowinance.vercel.app",
@@ -163,6 +171,28 @@
           "items": "Git, GitHub, Vercel, AWS, Supabase, Contentful, Google Cloud, Prismic, Firebase, Heroku, Figma"
         }
       ]
+    }
+  },
+  "contact": {
+    "title": "Trabajemos juntos",
+    "form": {
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "ejemplo@gmail.com"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Hola Manuel, me gustaría trabajar contigo..."
+      },
+      "error": {
+        "email": "Este no es un correo electrónico válido.",
+        "emptyField": "Este campo debe estar lleno."
+      },
+      "button": "Enviar"
+    },
+    "toast": {
+      "success": "¡Mensaje enviado con éxito!",
+      "error": "Se ha producido un error. Por favor, inténtalo de nuevo más tarde."
     }
   }
 }

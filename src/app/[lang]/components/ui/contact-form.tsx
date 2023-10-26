@@ -15,16 +15,24 @@ import { Input } from "./input";
 import { Button } from "./button";
 import { Textarea } from "./textarea";
 import { useToast } from "./use-toast";
+import { DictionaryData } from "@/app/types";
 
-const formSchema = z.object({
-  email: z
-    .string()
-    .min(1, { message: "This field has to be filled." })
-    .email("This is not a valid email."),
-  message: z.string().min(1, { message: "This field has to be filled." }),
-});
+interface ContactFormProps {
+  dict: DictionaryData;
+}
 
-export function ContactForm() {
+export const ContactForm: React.FC<ContactFormProps> = ({ dict }) => {
+  const { toast } = useToast();
+
+  const formSchema = z.object({
+    email: z
+      .string()
+      .min(1, { message: `${dict.contact.form.error.emptyField}` })
+      .email(`${dict.contact.form.error.email}`),
+    message: z
+      .string()
+      .min(1, { message: `${dict.contact.form.error.emptyField}` }),
+  });
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -32,7 +40,6 @@ export function ContactForm() {
       message: "",
     },
   });
-  const { toast } = useToast();
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
@@ -49,16 +56,16 @@ export function ContactForm() {
       console.log(response);
       if (response.ok) {
         toast({
-          description: "✅ Message sent successfully!",
+          description: `${dict.contact.toast.success}`,
         });
       } else {
         toast({
-          description: "❎ Message could not be sent. Please try again.",
+          description: `${dict.contact.toast.error}`,
         });
       }
     } catch (error) {
       toast({
-        description: "❎ Message could not be sent. Please try again.",
+        description: `${dict.contact.toast.error}`,
       });
     }
 
@@ -72,9 +79,12 @@ export function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>{dict.contact.form.email.label}</FormLabel>
               <FormControl>
-                <Input placeholder="example@gmail.com" {...field} />
+                <Input
+                  placeholder={dict.contact.form.email.placeholder}
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -85,10 +95,10 @@ export function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>{dict.contact.form.message.label}</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Type your message here..."
+                  placeholder={dict.contact.form.message.placeholder}
                   className="h-40 resize-none"
                   {...field}
                 />
@@ -98,9 +108,9 @@ export function ContactForm() {
           )}
         />
         <Button type="submit" variant="outline" className="shadow-sm">
-          Send
+          {dict.contact.form.button}
         </Button>
       </form>
     </Form>
   );
-}
+};
