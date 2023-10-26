@@ -81,7 +81,7 @@
   "resume": {
     "title": "Resume",
     "subtitle": "Here you can find my resume in PDF format.",
-    "download": "Download",
+    "downloadText": "Download resume",
     "downloadLink": "https://github.com/manuelalferez/resume/blob/master/resume.pdf",
     "experience": {
       "title": "Experience",
@@ -126,6 +126,38 @@
           "title": "BS in Information Technology",
           "institution": "University of Jyväskylä",
           "location": "Jyväskylä, Finland"
+        }
+      ]
+    },
+    "organizations": {
+      "title": "Organizations",
+      "list": [
+        {
+          "role": "Lead Organizer",
+          "organization": "Google Developer Groups",
+          "organizationLink": "https://gdg.community.dev/gdg-jaen/",
+          "achievements": [
+            "Events: Supporting the community to organize events of 300 people.",
+            "Speaker: Being speaker in 3 events about: Google Cloud, React.js and Open Source with Git & Github.",
+            "Community size: Leading a team of 8 volunteers to create a community of 900+ people."
+          ]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "list": [
+        {
+          "category": "Languages",
+          "items": "TypeScript, JavaScript, HTML, CSS, C/C++, Bash, Markdown"
+        },
+        {
+          "category": "Frameworks & Libraries",
+          "items": "React.js, Next.js, Tailwind CSS, Rechart, Node.js, Socket.IO, Express.js"
+        },
+        {
+          "category": "Tools",
+          "items": "Git, GitHub, Vercel, AWS, Supabase, Contentful, Google Cloud, Prismic, Firebase, Heroku, Figma"
         }
       ]
     }

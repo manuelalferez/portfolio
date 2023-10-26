@@ -43,10 +43,12 @@ export interface ProjectItem {
 interface ResumeSection {
   title: string;
   subtitle: string;
-  download: string;
+  downloadText: string;
   downloadLink: string;
   experience: Experience;
   education: Education;
+  organizations: Organizations;
+  skills: Skills;
 }
 
 interface Experience {
@@ -72,6 +74,28 @@ interface EducationItem {
   title: string;
   institution: string;
   location: string;
+}
+
+interface Organizations {
+  title: string;
+  list: OrganizationsItem[];
+}
+
+interface OrganizationsItem {
+  role: string;
+  organization: string;
+  organizationLink: string;
+  achievements: string[];
+}
+
+interface Skills {
+  title: string;
+  list: SkillsItem[];
+}
+
+interface SkillsItem {
+  category: string;
+  items: string;
 }
 
 export interface DictionaryData {
