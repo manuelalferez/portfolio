@@ -100,6 +100,7 @@ interface SkillsItem {
 
 interface ContactSection {
   title: string;
+  subtitle: string;
   form: Form;
   toast: Toast;
 }

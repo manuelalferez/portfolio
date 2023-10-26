@@ -164,6 +164,7 @@
   },
   "contact": {
     "title": "Let's work together",
+    "subtitle": "Want to get in touch? Fill out the form below and I will get back to you in less than 24 hours.",
     "form": {
       "email": {
         "label": "Email",
