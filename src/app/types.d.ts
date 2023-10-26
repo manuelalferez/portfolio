@@ -45,11 +45,15 @@ interface ResumeSection {
   subtitle: string;
   download: string;
   downloadLink: string;
-  experience: Experience[];
-  education: Education[];
+  experience: Experience;
+  education: Education;
 }
 
 interface Experience {
+  title: string;
+  list: ExperienceItem[];
+}
+interface ExperienceItem {
   period: string;
   role: string;
   company: string;
@@ -59,6 +63,11 @@ interface Experience {
 }
 
 interface Education {
+  title: string;
+  list: EducationItem[];
+}
+
+interface EducationItem {
   period: string;
   title: string;
   institution: string;
