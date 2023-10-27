@@ -1,5 +1,5 @@
 import { getDictionary } from "@/app/dictionaries";
-import { DictionaryData, Lang, OfferItem } from "@/app/types";
+import { DictionaryData, Lang } from "@/app/types";
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import Image from "next/image";
 
@@ -11,7 +11,7 @@ export default async function Offer({ lang }: Lang) {
         {dict.offer.title}
       </h1>
       <div className="flex flex-wrap justify-evenly gap-4">
-        {dict.offer.list.map((item: OfferItem, index: number) => (
+        {dict.offer.list.map((item, index) => (
           <Card
             className="border-none shadow-none hover:scale-105 md:w-1/3 lg:w-1/4"
             key={index}

@@ -19,7 +19,7 @@ interface OfferSection {
   list: OfferItem[];
 }
 
-export interface OfferItem {
+interface OfferItem {
   image: string;
   title: string;
   description: string;
@@ -31,7 +31,7 @@ interface ProjectsSection {
   list: ProjectItem[];
 }
 
-export interface ProjectItem {
+interface ProjectItem {
   title: string;
   description: string;
   technologies: string;

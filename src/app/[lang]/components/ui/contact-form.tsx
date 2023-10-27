@@ -16,6 +16,8 @@ import { Button } from "./button";
 import { Textarea } from "./textarea";
 import { useToast } from "./use-toast";
 import { DictionaryData } from "@/app/types";
+import { useState } from "react";
+import { LoadingIcon } from "./icons";
 
 interface ContactFormProps {
   dict: DictionaryData;
@@ -23,6 +25,7 @@ interface ContactFormProps {
 
 export const ContactForm: React.FC<ContactFormProps> = ({ dict }) => {
   const { toast } = useToast();
+  const [isSending, setIsSending] = useState(false);
 
   const formSchema = z.object({
     email: z
@@ -42,6 +45,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ dict }) => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSending(true);
     try {
       const response = await fetch("/api/send", {
         method: "POST",
@@ -68,7 +72,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ dict }) => {
         description: `${dict.contact.toast.error}`,
       });
     }
-
+    setIsSending(false);
     form.reset();
   }
   return (
@@ -107,8 +111,8 @@ export const ContactForm: React.FC<ContactFormProps> = ({ dict }) => {
             </FormItem>
           )}
         />
-        <Button type="submit" variant="outline" className="shadow-sm">
-          {dict.contact.form.button}
+        <Button type="submit" variant="outline" className="w-full shadow-sm">
+          {isSending ? <LoadingIcon /> : dict.contact.form.button}
         </Button>
       </form>
     </Form>

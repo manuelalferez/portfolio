@@ -1,5 +1,5 @@
 import { getDictionary } from "@/app/dictionaries";
-import { DictionaryData, Lang, ProjectItem } from "@/app/types";
+import { DictionaryData, Lang } from "@/app/types";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import Image from "next/image";
 import { GithubLink, WebsiteLink } from "./ui/icons";
@@ -19,7 +19,7 @@ export default async function Projects({ lang }: Lang) {
       </div>
 
       <div className="flex flex-wrap justify-center gap-4">
-        {dict.projects.list.map((item: ProjectItem, index: number) => (
+        {dict.projects.list.map((item, index) => (
           <Card className="p-0 shadow-md hover:shadow-lg xl:w-80" key={index}>
             <CardHeader className="p-0">
               <Card className="relative h-40 w-full rounded-none rounded-t-md border-none shadow-none">
