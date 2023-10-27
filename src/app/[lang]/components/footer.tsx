@@ -9,9 +9,9 @@ export default async function Footer({ lang }: Lang) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="mt-16 flex justify-between py-6 md:mt-32">
+    <div className="mt-16 flex flex-col justify-between gap-12 py-6 md:mt-32 md:flex-row md:gap-0">
       <div className="flex flex-col gap-2">
-        <div className="flex flex-col gap-2 md:flex-row md:items-center">
+        <div className="flex gap-2 md:items-center">
           <Logo className={cn("text-muted-foreground flex flex-col text-sm")} />
           <p className={cn("text-muted-foreground text-sm")}>
             © {currentYear} {dict.footer.name}
