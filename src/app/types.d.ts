@@ -127,10 +127,32 @@ interface Toast {
   error: string;
 }
 
+interface FooterSection {
+  resources: Resources[];
+  name: string;
+  social: Social[];
+}
+
+interface Resources {
+  title: string;
+  list: Resource[];
+}
+
+interface Resource {
+  text: string;
+  link: string;
+}
+
+interface Social {
+  key: string;
+  link: string;
+}
+
 export interface DictionaryData {
   about: AboutSection;
   offer: OfferSection;
   projects: ProjectsSection;
   resume: ResumeSection;
   contact: ContactSection;
+  footer: FooterSection;
 }

@@ -184,5 +184,54 @@
       "success": "Message sent successfully!",
       "error": "An error has occurred. Please try again later."
     }
+  },
+  "footer": {
+    "resources": [
+      {
+        "title": "Resources",
+        "list": [
+          {
+            "text": "Blog",
+            "link": "/blog"
+          },
+          {
+            "text": "Contact",
+            "link": "#contact"
+          }
+        ]
+      },
+      {
+        "title": "Legal",
+        "list": [
+          {
+            "text": "Cookies Policy",
+            "link": "/blog"
+          },
+          {
+            "text": "Privacy Policy",
+            "link": "#contact"
+          }
+        ]
+      }
+    ],
+    "name": "Manuel Alférez",
+    "social": [
+      {
+        "key": "github",
+        "link": "https://www.github.com/manuelalferez"
+      },
+      {
+        "key": "telegram",
+        "link": "https://t.me/manuelalferez"
+      },
+      {
+        "key": "twitter",
+        "link": "https://twitter.com/manuelalferez"
+      },
+      {
+        "key": "linkedin",
+        "link": "https://www.linkedin.com/in/manuelalferez/"
+      }
+    ]
   }
 }

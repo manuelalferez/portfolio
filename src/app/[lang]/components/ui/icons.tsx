@@ -29,6 +29,83 @@ export function GithubLink({
   );
 }
 
+export function LinkedinLink({
+  href,
+  className,
+}: {
+  href: string;
+  className?: string;
+}) {
+  return (
+    <Link href={href}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 15 15"
+        className={className}
+      >
+        <path
+          fill="currentColor"
+          fillRule="evenodd"
+          d="M2 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2Zm1.05 5h1.9v6h-1.9V6Zm2.025-1.995a1.075 1.075 0 1 1-2.15 0a1.075 1.075 0 0 1 2.15 0ZM12 8.357c0-1.805-1.167-2.507-2.326-2.507a2.206 2.206 0 0 0-1.095.231c-.257.13-.526.424-.734.938h-.053V6H6v6.005h1.906V8.81c-.027-.327.077-.75.291-1.001c.215-.252.52-.312.753-.342h.073c.606 0 1.056.375 1.056 1.32v3.217h1.906L12 8.357Z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </Link>
+  );
+}
+
+export function TelegramLink({
+  href,
+  className,
+}: {
+  href: string;
+  className?: string;
+}) {
+  return (
+    <Link href={href}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        className={className}
+      >
+        <path
+          fill="currentColor"
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19c-.14.75-.42 1-.68 1.03c-.58.05-1.02-.38-1.58-.75c-.88-.58-1.38-.94-2.23-1.5c-.99-.65-.35-1.01.22-1.59c.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02c-.09.02-1.49.95-4.22 2.79c-.4.27-.76.41-1.08.4c-.36-.01-1.04-.2-1.55-.37c-.63-.2-1.12-.31-1.08-.66c.02-.18.27-.36.74-.55c2.92-1.27 4.86-2.11 5.83-2.51c2.78-1.16 3.35-1.36 3.73-1.36c.08 0 .27.02.39.12c.1.08.13.19.14.27c-.01.06.01.24 0 .38z"
+        />
+      </svg>
+    </Link>
+  );
+}
+
+export function TwitterLink({
+  href,
+  className,
+}: {
+  href: string;
+  className?: string;
+}) {
+  return (
+    <Link href={href}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        className={className}
+      >
+        <path
+          fill="currentColor"
+          d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231l5.45-6.231Zm-1.161 17.52h1.833L7.045 4.126H5.078L17.044 19.77Z"
+        />
+      </svg>
+    </Link>
+  );
+}
+
 export function WebsiteLink({
   href,
   className,
@@ -243,4 +320,59 @@ export function LoadingIcon() {
       </g>
     </svg>
   );
+}
+
+export function Logo({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      className={className}
+    >
+      <g
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      >
+        <path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <path d="M9 16V8l3 5l3-5v8" />
+      </g>
+    </svg>
+  );
+}
+
+export function getSocialIcon(name: string, href: string) {
+  switch (name) {
+    case "github":
+      return (
+        <GithubLink href={href} className="text-gray-500 hover:text-gray-900" />
+      );
+    case "linkedin":
+      return (
+        <LinkedinLink
+          href={href}
+          className="text-gray-500 hover:text-gray-900"
+        />
+      );
+    case "telegram":
+      return (
+        <TelegramLink
+          href={href}
+          className="text-gray-500 hover:text-gray-900"
+        />
+      );
+    case "twitter":
+      return (
+        <TwitterLink
+          href={href}
+          className="text-gray-500 hover:text-gray-900"
+        />
+      );
+    default:
+      return null;
+  }
 }

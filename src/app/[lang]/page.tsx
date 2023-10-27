@@ -1,6 +1,7 @@
 import { Locale } from "../types";
 import About from "./components/about";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 import Header from "./components/header";
 import Offer from "./components/offer";
 import Projects from "./components/projects";
@@ -15,6 +16,7 @@ export default function Home({ params: { lang } }: Locale) {
       <Projects lang={lang} />
       <Resume lang={lang} />
       <Contact lang={lang} />
+      <Footer lang={lang} />
     </main>
   );
 }
