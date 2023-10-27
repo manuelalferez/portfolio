@@ -17,22 +17,25 @@ export default async function Experience({ lang }: Lang) {
         {dict.resume.experience.list.map((item, index) => (
           <div key={index}>
             <div>
-              <div className="flex justify-between">
+              <div className="flex justify-between pb-1">
                 <div>
-                  <p className="font-bold">{item.role}</p>
+                  <h2 className="text-xl">{item.role}</h2>
                   <Reference href={item.companyLink}>
                     <p className="border-1 inline-block border-black">
                       {item.company}
                     </p>
                   </Reference>
                 </div>
-                <div className={cn("text-muted-foreground text-end text-sm")}>
-                  <h3>{item.period}</h3>
-                  <h3>{item.location}</h3>
+                <div
+                  className={cn(
+                    "text-muted-foreground flex flex-col text-end text-sm",
+                  )}
+                >
+                  <span>{item.location}</span>
                 </div>
               </div>
 
-              <ul className="w-2/3 list-inside list-disc">
+              <ul className="list-inside list-disc text-justify">
                 {item.achievements.map((achievement, index) => (
                   <li
                     key={index}

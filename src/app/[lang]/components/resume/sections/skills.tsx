@@ -15,9 +15,13 @@ export default async function Skills({ lang }: Lang) {
       <CardContent className="flex flex-col gap-2 md:gap-0">
         {dict.resume.skills.list.map((item, index) => (
           <div key={index}>
-            <p className="flex flex-col font-bold md:flex-row md:items-center">
-              {item.category}:
-              <span className={cn("text-muted-foreground text-sm font-normal")}>
+            <p className="flex flex-col gap-1 font-bold md:flex-row">
+              <span className="flex flex-nowrap">{item.category}:</span>
+              <span
+                className={cn(
+                  "text-muted-foreground flex items-center text-sm font-normal",
+                )}
+              >
                 ({item.items})
               </span>
             </p>

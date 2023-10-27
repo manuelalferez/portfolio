@@ -24,7 +24,6 @@ export default async function Education({ lang }: Lang) {
                   </p>
                 </div>
                 <div className={cn("text-muted-foreground text-end text-sm")}>
-                  <h3>{item.period}</h3>
                   <h3>{item.location}</h3>
                 </div>
               </div>

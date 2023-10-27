@@ -18,7 +18,7 @@ export default async function Organizations({ lang }: Lang) {
           <div key={index}>
             <div>
               <div>
-                <p className="font-bold">{item.role}</p>
+                <h2 className="text-xl">{item.role}</h2>
                 <Reference href={item.organizationLink}>
                   <p className="border-1 border-black">{item.organization}</p>
                 </Reference>
@@ -28,7 +28,7 @@ export default async function Organizations({ lang }: Lang) {
                 {item.achievements.map((achievement, index) => (
                   <li
                     key={index}
-                    className={cn("text-muted-foreground text-sm")}
+                    className={cn("text-muted-foreground text-justify text-sm")}
                   >
                     {achievement}
                   </li>
