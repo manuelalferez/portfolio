@@ -10,7 +10,7 @@ export function GithubLink({
   className?: string;
 }) {
   return (
-    <a href={href}>
+    <Link href={href} target="_blank">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -25,7 +25,7 @@ export function GithubLink({
           clipRule="evenodd"
         />
       </svg>
-    </a>
+    </Link>
   );
 }
 
