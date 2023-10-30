@@ -12,6 +12,7 @@ export default function Reference({
   return (
     <Link
       href={href}
+      target="_blank"
       className={`w-fit text-reference-dark hover:text-reference-light ${className}`}
     >
       {children}

@@ -37,7 +37,7 @@ export function LinkedinLink({
   className?: string;
 }) {
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -64,7 +64,7 @@ export function TelegramLink({
   className?: string;
 }) {
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -89,7 +89,7 @@ export function TwitterLink({
   className?: string;
 }) {
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -114,7 +114,7 @@ export function WebsiteLink({
   className?: string;
 }) {
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"
@@ -216,6 +216,7 @@ export function DownloadLink({
   return (
     <Link
       href={href}
+      target="_blank"
       className={cn(
         "flex w-fit items-center gap-1 shadow-sm",
         buttonVariants({ variant: "outline" }),
