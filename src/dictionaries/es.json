@@ -194,6 +194,21 @@
     "toast": {
       "success": "¡Mensaje enviado con éxito!",
       "error": "Se ha producido un error. Por favor, inténtalo de nuevo más tarde."
+    },
+    "chat": {
+      "texts": [
+        "Envíame un mensaje directo, estoy súper activo en ",
+        "Twitter",
+        " o ",
+        "Telegram",
+        "Prefiero enviarte un correo electrónico",
+        "¡También me va bien! Aquí tienes mi ",
+        "correo"
+      ],
+      "twitter": "https://twitter.com/manuelalferez",
+      "telegram": "https://t.me/manuelalferez",
+      "email": "mailto:manuelalferezruiz@gmail.com",
+      "userBubbleImg": "https://ik.imagekit.io/manuelalferez/portfolio/user_contact.jpg?updatedAt=1698416274728"
     }
   },
   "footer": {

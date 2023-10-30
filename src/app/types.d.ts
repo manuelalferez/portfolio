@@ -103,6 +103,7 @@ interface ContactSection {
   subtitle: string;
   form: Form;
   toast: Toast;
+  chat: Chat;
 }
 
 interface Form {
@@ -125,6 +126,14 @@ interface Error {
 interface Toast {
   success: string;
   error: string;
+}
+
+interface Chat {
+  texts: string[];
+  twitter: string;
+  telegram: string;
+  email: string;
+  userBubbleImg: string;
 }
 
 interface FooterSection {

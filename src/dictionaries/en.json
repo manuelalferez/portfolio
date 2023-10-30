@@ -164,7 +164,7 @@
   },
   "contact": {
     "title": "Let's work together",
-    "subtitle": "Want to get in touch? Fill out the form below and I will get back to you in less than 24 hours.",
+    "subtitle": "Want to get in touch? I'll reply within 24 hours.",
     "form": {
       "email": {
         "label": "Email",
@@ -183,6 +183,21 @@
     "toast": {
       "success": "Message sent successfully!",
       "error": "An error has occurred. Please try again later."
+    },
+    "chat": {
+      "texts": [
+        "Send me a DM, I'm super active on ",
+        "Twitter",
+        " or ",
+        "Telegram",
+        "Nah, I’d rather send you an email",
+        "That works too! Send me an ",
+        "email"
+      ],
+      "twitter": "https://twitter.com/manuelalferez",
+      "telegram": "https://t.me/manuelalferez",
+      "email": "mailto:manuelalferezruiz@gmail.com",
+      "userBubbleImg": "https://ik.imagekit.io/manuelalferez/portfolio/user_contact.jpg?updatedAt=1698416274728"
     }
   },
   "footer": {

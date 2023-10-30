@@ -1,6 +1,6 @@
 import { DictionaryData, Lang } from "@/app/types";
-import { ContactForm } from "./ui/contact-form";
 import { getDictionary } from "@/app/dictionaries";
+import Chatting from "./chatting";
 
 export default async function Contact({ lang }: Lang) {
   const dict: DictionaryData = await getDictionary(lang);
@@ -13,8 +13,8 @@ export default async function Contact({ lang }: Lang) {
         <h2 className="flex text-xl md:justify-center md:text-center md:text-2xl">
           {dict.contact.subtitle}
         </h2>
+        <Chatting lang={lang} />
       </div>
-      <ContactForm dict={dict} />
     </div>
   );
 }
