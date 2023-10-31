@@ -139,6 +139,7 @@ interface Chat {
 interface FooterSection {
   resources: Resources[];
   name: string;
+  sourceCode: SourceCode;
   social: Social[];
 }
 
@@ -154,6 +155,11 @@ interface Resource {
 
 interface Social {
   key: string;
+  link: string;
+}
+
+interface SourceCode {
+  text: string;
   link: string;
 }
 

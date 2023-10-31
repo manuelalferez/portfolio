@@ -235,6 +235,10 @@
       }
     ],
     "name": "Manuel Alférez",
+    "sourceCode": {
+      "text": "Código fuente",
+      "link": "https://github.com/manuelalferez/portfolio"
+    },
     "social": [
       {
         "key": "github",

@@ -1,8 +1,9 @@
 import { DictionaryData, Lang } from "@/app/types";
-import { Logo, getSocialIcon } from "./ui/icons";
+import { GithubIcon, Logo, getSocialIcon } from "./ui/icons";
 import { cn } from "@/lib/utils";
 import { getDictionary } from "@/app/dictionaries";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default async function Footer({ lang }: Lang) {
   const dict: DictionaryData = await getDictionary(lang);
@@ -28,6 +29,13 @@ export default async function Footer({ lang }: Lang) {
             </div>
           ))}
         </div>
+      </div>
+      <div className="flex gap-16">
+        <Link href={dict.footer.sourceCode.link} target="_blank">
+          <Button className="flex gap-1" variant="outline">
+            <GithubIcon /> {dict.footer.sourceCode.text}
+          </Button>
+        </Link>
       </div>
       {/* <div className="flex gap-16">
         {dict.footer.resources.map((resource, index) => (
