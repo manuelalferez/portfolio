@@ -1,4 +1,4 @@
-# Manuel's Portfolio 
+# Portfolio for freelancers 
 A portfolio for freelancers to showcase their work and experience.
 
 ## Features 
