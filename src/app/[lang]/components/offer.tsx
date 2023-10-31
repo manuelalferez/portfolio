@@ -10,10 +10,10 @@ export default async function Offer({ lang }: Lang) {
       <h1 className="animated-text flex pb-2 text-4xl font-bold md:justify-center md:text-5xl">
         {dict.offer.title}
       </h1>
-      <div className="flex flex-wrap justify-evenly gap-4">
+      <div className="flex flex-wrap justify-between gap-2">
         {dict.offer.list.map((item, index) => (
           <Card
-            className="border-none shadow-none hover:scale-105 md:w-1/3 lg:w-1/4"
+            className="border-none shadow-none hover:scale-105 md:w-1/3 xl:w-1/4"
             key={index}
           >
             <CardHeader>

@@ -3,47 +3,32 @@
     "hi": "Hi",
     "verb": ", I'm",
     "name": "Manuel Alférez",
-    "description": "I'm a software developer and an open source enthusiast. I work as a Solutions Engineer at Hubtype and participate as a member of Google Developer Groups.",
+    "description": "I'm a software developer and an open source enthusiast based in Spain. I also have experience organizing events for over +300 people. You'll often find me in the chess zone, venturing out for hikes, and running half-marathons",
     "image": "https://avatars.githubusercontent.com/u/38152841?v=4"
   },
   "offer": {
     "title": "What I can do for you",
     "list": [
       {
-        "image": "https://api.iconify.design/jam:thunder.svg",
-        "title": "Web Development",
-        "description": "I can help you build your website or web application using the latest technologies."
+        "image": "https://api.iconify.design/material-symbols:target.svg",
+        "title": "Customized Digital Solutions",
+        "description": "I'll study your product and your target audience thoroughly to create the best digital solution for your business"
       },
       {
-        "image": "https://api.iconify.design/jam:user-circle.svg",
-        "title": "Web Development",
-        "description": "I can help you build your website or web application using the latest technologies."
+        "image": "https://api.iconify.design/material-symbols:show-chart.svg",
+        "title": "Project upgrade",
+        "description": "Do you already have a project? No problem, I can enhance it to attract new leads and increase your revenue"
       },
       {
-        "image": "https://api.iconify.design/material-symbols:shield-lock-rounded.svg",
-        "title": "Web Development",
-        "description": "I can help you build your website or web application using the latest technologies."
-      },
-      {
-        "image": "https://api.iconify.design/jam:thunder.svg",
-        "title": "Web Development",
-        "description": "I can help you build your website or web application using the latest technologies."
-      },
-      {
-        "image": "https://api.iconify.design/jam:user-circle.svg",
-        "title": "Web Development",
-        "description": "I can help you build your website or web application using the latest technologies."
-      },
-      {
-        "image": "https://api.iconify.design/material-symbols:shield-lock-rounded.svg",
-        "title": "Web Development",
-        "description": "I can help you build your website or web application using the latest technologies."
+        "image": "https://api.iconify.design/material-symbols:dashboard-customize-rounded.svg",
+        "title": "E-commerce",
+        "description": "From e-commerce platforms to interactive applications, and I can seamlessly integrate Stripe payments for your business"
       }
     ]
   },
   "projects": {
     "title": "Featured projects",
-    "subtitle": "Here are some of my latest projects that I'm proud of.",
+    "subtitle": "Here are some of my latest projects that I'm proud of",
     "list": [
       {
         "title": "Flowinance",
@@ -55,32 +40,64 @@
       },
       {
         "title": "Chatcus",
-        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
-        "technologies": "Next.js • Supabase",
-        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_chatcus.png?updatedAt=1698240626670",
-        "website": "https://flowinance.vercel.app",
-        "code": "https://github.com/manuelalferez/flowinance"
+        "description": "A real-time chat application where use can create rooms and chat with other users.",
+        "technologies": "React.js • Socket.IO • Google Cloud",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects/chatcus_KLsThsVQU.png?updatedAt=1698751735143",
+        "website": "https://chatcus.vercel.app",
+        "code": "https://github.com/manuelalferez/chatcus"
       },
       {
-        "title": "Flowinance",
-        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
-        "technologies": "Next.js • Supabase • TailwindCSS",
-        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_flowinance.png?updatedAt=1698237336857",
-        "website": "https://flowinance.vercel.app"
+        "title": "PicLab",
+        "description": "Landing page for a company specializing in image asset management (just frontend).",
+        "technologies": "Next.js • TailwindCSS",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects/piclab_fsj2cHbw3.jpeg?updatedAt=1698745561074",
+        "website": "https://piclab-monogram.vercel.app",
+        "code": "https://github.com/manuelalferez/piclab"
       },
       {
-        "title": "Flowinance",
-        "description": "Managing your money is now easier than ever. Visualize your budget in a quick and easy way.",
-        "technologies": "Next.js • Supabase • TailwindCSS",
-        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects_flowinance.png?updatedAt=1698237336857",
-        "website": "https://flowinance.vercel.app",
-        "code": "https://github.com/manuelalferez/flowinance"
+        "title": "Practice Aptis B1",
+        "description": "Exercises to practice the B1 of the Aptis test.",
+        "technologies": "React.js • JavaScript",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects/SCR-20231031-hh5_bqGzgK_Dn.jpeg?updatedAt=1698752115598",
+        "website": "https://practice-aptis.vercel.app/",
+        "code": "https://github.com/manuelalferez/practice-aptis"
+      },
+      {
+        "title": "Adasstra",
+        "description": " An NGO providing support to those in need, allowing donors to contribute funds and witness the impact of their contributions through a dedicated blog.",
+        "technologies": "Next.js • Prismic • gofundme",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects/SCR-20231031-hr6_m2N5Neekq.png?updatedAt=1698752834368",
+        "website": "https://adasstra.vercel.app/"
+      },
+      {
+        "title": "Blog",
+        "description": "Showcase of a personal website with a blog section connected to Prismic CMS.",
+        "technologies": "Next.js • Prismic • Google Analytics",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects/SCR-20231031-hp8_3WWGFbrGF.jpeg?updatedAt=1698752694181",
+        "website": "https://manuel-blog.vercel.app",
+        "code": "https://github.com/manuelalferez/blog"
+      },
+      {
+        "title": "Checklist App",
+        "description": "A simple checklist app to keep track of your daily tasks.",
+        "technologies": "JavaScript • CSS",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects/SCR-20231031-hzs_RfZ4uTBqa.png?updatedAt=1698753459693",
+        "website": "https://manuelalferez.github.io/app-my-list/",
+        "code": "https://github.com/manuelalferez/app-my-list"
+      },
+      {
+        "title": "Cat facts",
+        "description": "Webpage that shows facts about cats through the API provider.",
+        "technologies": "React.js • TailwindCSS",
+        "image": "https://ik.imagekit.io/manuelalferez/portfolio/projects/SCR-20231031-hk0_nLE9BjMJY.png?updatedAt=1698752314052",
+        "website": "https://cat-facts-manuel.vercel.app",
+        "code": "https://github.com/manuelalferez/cat-facts"
       }
     ]
   },
   "resume": {
     "title": "Resume",
-    "subtitle": "Here you can find my resume in PDF format.",
+    "subtitle": "Explore my resume where, just like in chess ♟️, every move counts",
     "downloadText": "Download resume",
     "downloadLink": "https://github.com/manuelalferez/resume/blob/master/resume.pdf",
     "experience": {
@@ -88,18 +105,6 @@
       "list": [
         {
           "period": "2022 - Present",
-          "role": "Solutions Engineer",
-          "company": "Hubtype",
-          "companyLink": "https://www.hubtype.com/",
-          "location": "Remote, Spain",
-          "achievements": [
-            "Improved user experience in bots by creating custom visual message components, resulting in over +36M meaningful interactions and a significant improvement in the user experience.",
-            "Implemented an internal plugin able to generate chatbots from a backend-supplied flow, and reporting directly to the CTO on the progress and success of the project.",
-            "Facilitated interactive software training sessions for customers, encompassing both the basics of product knowledge and advanced technical aspects of bots specifically for developers."
-          ]
-        },
-        {
-          "period": "2021 - 2022",
           "role": "Solutions Engineer",
           "company": "Hubtype",
           "companyLink": "https://www.hubtype.com/",
@@ -164,7 +169,7 @@
   },
   "contact": {
     "title": "Let's work together",
-    "subtitle": "Want to get in touch? I'll reply within 24 hours.",
+    "subtitle": "Want to get in touch? I'll get back to you within a day",
     "form": {
       "email": {
         "label": "Email",

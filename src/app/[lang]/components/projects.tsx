@@ -29,7 +29,7 @@ export default async function Projects({ lang }: Lang) {
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
                   style={{ objectFit: "cover" }}
-                  className="rounded-md"
+                  className="rounded-md rounded-b-none"
                 />
               </Card>
             </CardHeader>

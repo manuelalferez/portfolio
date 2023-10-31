@@ -16,7 +16,7 @@ export default async function Resume({ lang }: Lang) {
           {dict.resume.title}
         </h1>
         <div className="flex flex-col gap-4 md:items-center">
-          <h2 className="flex text-xl md:justify-center md:text-2xl">
+          <h2 className="flex text-xl md:justify-center md:text-center md:text-2xl">
             {dict.resume.subtitle}
           </h2>
           <DownloadLink

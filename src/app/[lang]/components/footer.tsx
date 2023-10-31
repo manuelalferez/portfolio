@@ -11,9 +11,9 @@ export default async function Footer({ lang }: Lang) {
   return (
     <div className="mt-16 flex flex-col justify-between gap-12 py-6 md:mt-32 md:flex-row md:gap-0">
       <div className="flex flex-col gap-2">
-        <div className="flex gap-2 md:items-center">
-          <Logo className={cn("text-muted-foreground flex flex-col text-sm")} />
-          <p className={cn("text-muted-foreground text-sm")}>
+        <div className="flex items-center gap-2">
+          <Logo className={cn("flex flex-col text-sm text-muted-foreground")} />
+          <p className={cn("text-sm text-muted-foreground")}>
             © {currentYear} {dict.footer.name}
           </p>
         </div>
@@ -21,7 +21,7 @@ export default async function Footer({ lang }: Lang) {
           {dict.footer.social.map((social, index) => (
             <div key={index}>
               <div
-                className={cn("text-muted-foreground flex flex-col text-sm")}
+                className={cn("flex flex-col text-sm text-muted-foreground")}
               >
                 {getSocialIcon(social.key, social.link)}
               </div>
@@ -29,7 +29,7 @@ export default async function Footer({ lang }: Lang) {
           ))}
         </div>
       </div>
-      <div className="flex gap-16">
+      {/* <div className="flex gap-16">
         {dict.footer.resources.map((resource, index) => (
           <div key={index}>
             <h3>{resource.title}</h3>
@@ -46,7 +46,7 @@ export default async function Footer({ lang }: Lang) {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
