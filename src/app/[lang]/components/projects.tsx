@@ -20,7 +20,10 @@ export default async function Projects({ lang }: Lang) {
 
       <div className="flex flex-wrap justify-center gap-4">
         {dict.projects.list.map((item, index) => (
-          <Card className="p-0 shadow-md hover:shadow-lg xl:w-80" key={index}>
+          <Card
+            className="w-full p-0 shadow-md hover:shadow-lg md:w-1/2 xl:w-80"
+            key={index}
+          >
             <CardHeader className="p-0">
               <Card className="relative h-40 w-full rounded-none rounded-t-md border-none shadow-none">
                 <Image
