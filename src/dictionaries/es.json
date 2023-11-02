@@ -3,7 +3,7 @@
     "hi": "Hola",
     "verb": ", soy",
     "name": "Manuel Alférez",
-    "description": "Soy un desarrollador de software y un entusiasta del código abierto con base en España. También tengo experiencia en la organización de eventos para más de +300 personas. A menudo me encontrarás en la zona de ajedrez, saliendo a hacer caminatas y corriendo medias maratones.",
+    "description": "Soy un desarrollador de software y entusiasta del código abierto que vive en España. También tengo experiencia en la organización de eventos de +300 personas. A menudo me encontrarás jugando al ajedrez, haciendo senderismo y corriendo medias maratones.",
     "image": "https://avatars.githubusercontent.com/u/38152841?v=4"
   },
   "offer": {
@@ -96,12 +96,12 @@
     ]
   },
   "resume": {
-    "title": "Resume",
+    "title": "Currículum",
     "subtitle": "Explora mi currículum, donde, al igual que en el ajedrez ♟️, cada movimiento cuenta",
-    "downloadText": "Download",
+    "downloadText": "Descargar CV",
     "downloadLink": "https://github.com/manuelalferez/resume/blob/master/resume.pdf",
     "experience": {
-      "title": "Experience",
+      "title": "Experiencia",
       "list": [
         {
           "period": "2022 - Actualidad",
@@ -135,14 +135,14 @@
       ]
     },
     "organizations": {
-      "title": "Organizations",
+      "title": "Organizaciones",
       "list": [
         {
           "role": "Lead Organizer",
           "organization": "Google Developers Groups",
           "organizationLink": "https://gdg.community.dev/gdg-jaen/",
           "achievements": [
-            "Eventos: Apoyo a la comunidad en la organización de eventos con 300 personas.",
+            "Eventos: Apoyo a la comunidad en la organización de eventos con +300 personas.",
             "Ponente: Participación como ponente en 3 eventos sobre: Google Cloud, React.js y Código Abierto con Git y Github.",
             "Tamaño de la comunidad: Liderando un equipo de 8 voluntarios para crear una comunidad de más de 900 personas."
           ]
