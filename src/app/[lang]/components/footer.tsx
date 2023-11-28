@@ -30,9 +30,12 @@ export default async function Footer({ lang }: Lang) {
           ))}
         </div>
       </div>
-      <div className="flex gap-16">
+      <div className="flex items-end gap-16">
         <Link href={dict.footer.sourceCode.link} target="_blank">
-          <Button className="flex gap-1" variant="outline">
+          <Button
+            className={cn("flex gap-1 text-muted-foreground")}
+            variant="outline"
+          >
             <GithubIcon /> {dict.footer.sourceCode.text}
           </Button>
         </Link>
